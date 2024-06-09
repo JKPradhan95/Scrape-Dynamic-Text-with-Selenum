@@ -18,7 +18,7 @@ def get_driver():
 def main():
     driver = get_driver()
     try:
-        element = driver.find_element(by="xpath", value='/html/body/div[1]/div/h1[1]')
+        element = driver.find_element(by="xpath", value='/html/body/div[1]/div/h1[2]')
         return element.text
     except NoSuchElementException:
         return "Element not found"
@@ -26,3 +26,4 @@ def main():
         driver.quit()
 
 print(main())
+
